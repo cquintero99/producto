@@ -1,5 +1,6 @@
 package com.example.producto.service;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,7 +12,7 @@ import com.example.producto.repository.IProductoRepository;
 import com.example.producto.repositoryService.IProductoRepositoryService;
 
 @Service
-public class ProductoService implements IProductoRepositoryService {
+public class ProductoService implements IProductoRepositoryService  {
 	@Autowired
 	private IProductoRepository data;
 
@@ -39,5 +40,9 @@ public class ProductoService implements IProductoRepositoryService {
 	public void delete(int id) {
 		data.deleteById(id);
 	}
+
+	
+
+	
 
 }
